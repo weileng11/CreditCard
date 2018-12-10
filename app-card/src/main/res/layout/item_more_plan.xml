@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:orientation="vertical"
+	android:background="@color/colorWhite"
+	>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp45"
+		android:orientation="horizontal"
+		android:layout_marginLeft="@dimen/dp15"
+		android:layout_marginRight="@dimen/dp15"
+		android:gravity="center_vertical"
+		android:background="@color/colorWhite"
+		>
+		<View
+			android:layout_width="@dimen/dp2"
+			android:layout_height="@dimen/dp18"
+			android:background="@color/color_card_ok"
+			/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="计划列表"
+			android:layout_marginLeft="@dimen/dp10"
+			android:textSize="@dimen/sp16"
+			android:textColor="@color/grayColor_main"
+			/>
+	</LinearLayout>
+	
+	<android.support.v7.widget.CardView
+		android:id="@+id/card_ok_add"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp161"
+		android:layout_gravity="bottom"
+		android:layout_marginLeft="@dimen/dp15"
+		android:layout_marginRight="@dimen/dp15"
+		android:layout_marginBottom="@dimen/dp15"
+		android:foreground="?attr/selectableItemBackground"
+		app:cardBackgroundColor="@color/colorWhite"
+		app:cardCornerRadius="@dimen/dp5"
+		app:cardElevation="@dimen/dp3"
+		>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+			
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+				
+				<ImageView
+					android:layout_width="@dimen/dp11"
+					android:layout_height="@dimen/dp11"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="@dimen/dp5"
+					android:layout_marginTop="@dimen/dp3"
+					android:src="@mipmap/app_launch"
+					/>
+			</RelativeLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+				
+				<app.card.view.CircleHeadImageView
+					android:layout_width="@dimen/dp47"
+					android:layout_height="@dimen/dp47"
+					android:layout_marginLeft="@dimen/dp20"
+					android:src="@mipmap/app_launch"
+					/>
+				
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dp10"
+					android:orientation="vertical"
+					>
+					
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp5"
+						android:orientation="horizontal"
+						>
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="招商银行"
+							android:textColor="@color/grayColor_main"
+							android:textSize="@dimen/sp16"
+							/>
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/dp10"
+							android:text="尾号:1234"
+							android:textColor="@color/color_pub_tv1"
+							android:textSize="@dimen/sp12"
+							/>
+						
+						<android.support.v7.widget.CardView
+							android:layout_width="@dimen/dp38"
+							android:layout_height="@dimen/dp17"
+							android:layout_marginLeft="@dimen/dp10"
+							android:foreground="?attr/selectableItemBackground"
+							app:cardBackgroundColor="@color/grayColor_line"
+							app:cardCornerRadius="@dimen/dp5"
+							app:cardElevation="@dimen/dp2"
+							>
+							
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:text="已执行"
+								android:textColor="@color/plan_more_tv"
+								android:textSize="@dimen/sp10"
+								/>
+						</android.support.v7.widget.CardView>
+					</LinearLayout>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp8"
+						android:text="计划日期:2018-2-2"
+						android:textColor="@color/color_pub_tv1"
+						android:textSize="@dimen/sp12"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+			
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+				
+				<ImageView
+					android:layout_width="@dimen/dp36"
+					android:layout_height="@dimen/dp36"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="@dimen/dp20"
+					android:src="@mipmap/app_launch"
+					/>
+			</RelativeLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_marginRight="@dimen/dp60"
+				>
+				
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:gravity="center"
+					>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="20"
+						android:textColor="@color/grayColor_main"
+						android:textSize="@dimen/sp14"
+						/>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp10"
+						android:text="还款金额"
+						android:textColor="@color/color_pub_tv1"
+						android:textSize="@dimen/sp12"
+						/>
+				</LinearLayout>
+				
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:gravity="center"
+					>
+					
+					<TextView
+						android:id="@+id/textView2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="20"
+						android:textColor="@color/grayColor_main"
+						android:textSize="@dimen/sp14"
+						/>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp10"
+						android:text="还款模式"
+						android:textColor="@color/color_pub_tv1"
+						android:textSize="@dimen/sp12"
+						/>
+				</LinearLayout>
+				
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:gravity="center"
+					>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="20"
+						android:textColor="@color/grayColor_main"
+						android:textSize="@dimen/sp14"
+						/>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp10"
+						android:ellipsize="end"
+						android:maxLines="1"
+						android:text="还款笔数"
+						android:textColor="@color/color_pub_tv1"
+						android:textSize="@dimen/sp12"
+						/>
+				</LinearLayout>
+				
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:gravity="center"
+					>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="20"
+						android:textColor="@color/grayColor_main"
+						android:textSize="@dimen/sp14"
+						/>
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dp10"
+						android:ellipsize="end"
+						android:maxLines="1"
+						android:text="手续费"
+						android:textColor="@color/color_pub_tv1"
+						android:textSize="@dimen/sp12"
+						/>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+</LinearLayout>

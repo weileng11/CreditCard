@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+	
+	<include layout="@layout/toolbar" />
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+		
+		<app.card.view.KmRecyclerView
+			android:id="@+id/rv_plan_set"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layoutManager="@string/LinearLayoutManager"
+			
+			/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:background="@color/colorWhite"
+			android:visibility="gone"
+			>
+			
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dp48"
+				android:layout_marginBottom="@dimen/dp10"
+				android:layout_marginLeft="@dimen/dp20"
+				android:layout_marginRight="@dimen/dp20"
+				android:layout_marginTop="@dimen/dp10"
+				android:foreground="?attr/selectableItemBackground"
+				app:cardBackgroundColor="@color/color_card_ok"
+				app:cardCornerRadius="@dimen/dp5"
+				app:cardElevation="@dimen/dp2"
+				>
+				
+				<TextView
+					android:id="@+id/txv_enact_plan"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="制定计划"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/sp16"
+					/>
+			</android.support.v7.widget.CardView>
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="app.card">
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!--8.0安装应用未知来源-->
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+	<application android:allowBackup="true"
+		android:label="@string/app_name"
+		android:theme="@style/KmTheme.NoActionBar"
+		android:supportsRtl="true">
+		
+		<!-- 预约还款-->
+		<activity android:name=".ui.ActAppointmentRefund"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 计划列表-->
+		<activity android:name=".ui.ActPlanList"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 计划详情 <activity android:hardwareAccelerated="false" />-->
+		<activity android:name=".ui.ActPlanDetail"
+			android:screenOrientation="portrait"
+			android:hardwareAccelerated="false"
+			/>
+		<!-- 空卡预约认证-->
+		<activity android:name=".ui.ActEmptyCardDetail"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 空卡预约认证首页(打赏查询)-->
+		<activity android:name=".ui.ActEmptyCardYuAuthentication"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 空卡代还管理-->
+		<activity android:name=".ui.ActEmptyCardHaiManager"
+			android:screenOrientation="portrait"
+			/>
+		
+		<!-- 更多计划-->
+		<activity android:name=".ui.ActMorePlan"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 添加信用卡信息-->
+		<activity android:name=".ui.ActAddCardInfo"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 添加信用卡流程-->
+		<activity android:name=".ui.ActAddCardFlow"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 发起授权成功界面-->
+		<activity android:name=".ui.ActAwardSuccess"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 信用卡管家-->
+		<activity android:name=".ui.ActCreditCardManager"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 信用卡管家banner-->
+		<activity android:name=".ui.ActCreditCardManagerBanner"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 选择通道-->
+		<activity android:name=".ui.ActSelectAisle"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 设置提交计划-->
+		<activity android:name=".ui.ActSetCommitPlan"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 设置还款计划总页面-->
+		<activity android:name=".ui.ActSetHaimoneyPlan"
+			android:windowSoftInputMode="adjustPan"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 上传图片证明-->
+		<activity android:name=".ui.ActUploadImageProve"
+			android:screenOrientation="portrait"
+			/>
+		<activity android:name=".ui.ActWeb"
+			android:screenOrientation="portrait"
+			/>
+		<!-- 选择地区-->
+		<activity android:name=".ui.ActArea"
+			android:screenOrientation="portrait"
+			/>
+	</application>
+</manifest>

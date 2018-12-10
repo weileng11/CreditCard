@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	>
+	
+	<include layout="@layout/toolbar" />
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+			
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="top"
+				>
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/dp110"
+					android:background="@color/color_info_tv"
+					android:fitsSystemWindows="true"
+					android:orientation="vertical"
+					>
+					
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/dp140"
+						android:src="@mipmap/app_launch"
+						/>
+				</LinearLayout>
+				
+				<android.support.v7.widget.CardView
+					android:id="@+id/card_ok_add"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dp168"
+					android:layout_gravity="bottom"
+					android:layout_marginLeft="@dimen/dp20"
+					android:layout_marginRight="@dimen/dp20"
+					android:foreground="?attr/selectableItemBackground"
+					app:cardBackgroundColor="@color/colorWhite"
+					app:cardCornerRadius="@dimen/dp5"
+					app:cardElevation="@dimen/dp2"
+					>
+					
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						>
+						
+						<LinearLayout
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_margin="@dimen/dp20"
+							android:layout_weight="2"
+							android:orientation="vertical"
+							>
+							
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="大数据+运营商信用报告"
+								android:textColor="@color/grayColor_main"
+								android:textSize="@dimen/sp16"
+								/>
+							
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="@dimen/dp8"
+								android:text="@string/empty_content"
+								android:textColor="@color/color_pub_tv1"
+								android:textSize="@dimen/sp12"
+								/>
+							<LinearLayout
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								>
+								<TextView
+									android:id="@+id/txv_empty_price"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="@dimen/dp10"
+									android:text="9.9元"
+									android:textColor="@color/empty_red"
+									android:textSize="@dimen/sp14"
+									/>
+								
+								<TextView
+									android:id="@+id/txv_empty_price_yuan"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="@dimen/dp10"
+									android:text="9.99元"
+									android:layout_marginLeft="@dimen/dp20"
+									android:textColor="@color/color_pub_tv1"
+									android:textSize="@dimen/sp14"
+									/>
+								
+							</LinearLayout>
+							
+							
+							
+							<android.support.v7.widget.CardView
+								android:id="@+id/card_empty_select"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="@dimen/dp15"
+								android:foreground="?attr/selectableItemBackground"
+								app:cardBackgroundColor="@color/color_card_ok"
+								app:cardCornerRadius="@dimen/dp5"
+								app:cardElevation="@dimen/dp2"
+								app:contentPadding="@dimen/dp5"
+								>
+								
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="点击查询"
+									android:textColor="@color/colorWhite"
+									/>
+							</android.support.v7.widget.CardView>
+						</LinearLayout>
+						
+						<LinearLayout
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							>
+							
+							<ImageView
+								android:layout_width="@dimen/dp96"
+								android:layout_height="@dimen/dp112"
+								android:src="@mipmap/card_shouquan"
+								/>
+						</LinearLayout>
+					</LinearLayout>
+				</android.support.v7.widget.CardView>
+			</FrameLayout>
+			
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="@dimen/dp20"
+				android:layout_marginRight="@dimen/dp20"
+				android:layout_marginTop="@dimen/dp20"
+				android:foreground="?attr/selectableItemBackground"
+				app:cardBackgroundColor="@color/colorWhite"
+				app:cardCornerRadius="@dimen/dp5"
+				app:cardElevation="@dimen/dp2"
+				>
+				
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					>
+					
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/dp48"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						>
+						
+						<ImageView
+							android:layout_width="@dimen/dp16"
+							android:layout_height="@dimen/dp18"
+							android:layout_marginLeft="@dimen/dp10"
+							android:src="@mipmap/card_add_name"
+							/>
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/dp10"
+							android:text="姓名:"
+							android:textColor="@color/grayColor_main"
+							android:textSize="@dimen/sp14"
+							/>
+						
+						<EditText
+							android:id="@+id/ed_empty_name"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/dp30"
+							android:layout_marginLeft="@dimen/dp40"
+							android:background="@null"
+							android:ellipsize="end"
+							android:hint="请输入姓名"
+							android:maxLines="1"
+							android:textColor="@color/colorWhite"
+							android:textColorHint="@color/grayColor_ed_hint"
+							android:textSize="@dimen/sp14"
+							/>
+					</LinearLayout>
+					
+					<View style="@style/project_line" />
+					
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/dp48"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						>
+						
+						<ImageView
+							android:layout_width="@dimen/dp16"
+							android:layout_height="@dimen/dp18"
+							android:layout_marginLeft="@dimen/dp10"
+							android:src="@mipmap/card_phone"
+							/>
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/dp10"
+							android:text="手机号:"
+							android:textColor="@color/grayColor_main"
+							android:textSize="@dimen/sp14"
+							/>
+						
+						<EditText
+							android:id="@+id/ed_empty_phone"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/dp30"
+							android:layout_marginLeft="@dimen/dp25"
+							android:background="@null"
+							android:ellipsize="end"
+							android:hint="请输入手机号"
+							android:maxLines="1"
+							android:textColor="@color/colorWhite"
+							android:textColorHint="@color/grayColor_ed_hint"
+							android:textSize="@dimen/sp14"
+							/>
+					</LinearLayout>
+					
+					<View style="@style/project_line" />
+					
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/dp48"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						>
+						
+						<ImageView
+							android:layout_width="@dimen/dp16"
+							android:layout_height="@dimen/dp18"
+							android:layout_marginLeft="@dimen/dp10"
+							android:src="@mipmap/card_add_identity"
+							/>
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/dp10"
+							android:text="身份证号:"
+							android:textColor="@color/grayColor_main"
+							android:textSize="@dimen/sp14"
+							/>
+						
+						<EditText
+							android:id="@+id/ed_empty_identity"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/dp30"
+							android:layout_marginLeft="@dimen/dp15"
+							android:background="@null"
+							android:ellipsize="end"
+							android:hint="请输入身份证号"
+							android:maxLines="1"
+							android:textColor="@color/colorWhite"
+							android:textColorHint="@color/grayColor_ed_hint"
+							android:textSize="@dimen/sp14"
+							/>
+					</LinearLayout>
+					
+					<View style="@style/project_line" />
+					
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/dp48"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						>
+						
+						<ImageView
+							android:layout_width="@dimen/dp16"
+							android:layout_height="@dimen/dp18"
+							android:layout_marginLeft="@dimen/dp10"
+							android:src="@mipmap/card_empty_email"
+							/>
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/dp10"
+							android:text="邮箱:"
+							android:textColor="@color/grayColor_main"
+							android:textSize="@dimen/sp14"
+							/>
+						
+						<EditText
+							android:id="@+id/ed_empty_email"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/dp30"
+							android:layout_marginLeft="@dimen/dp15"
+							android:background="@null"
+							android:ellipsize="end"
+							android:hint="请输入邮箱号码"
+							android:maxLines="1"
+							android:textColor="@color/colorWhite"
+							android:textColorHint="@color/grayColor_ed_hint"
+							android:textSize="@dimen/sp14"
+							/>
+					</LinearLayout>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp66"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentStart="true"
+			android:background="@color/colorWhite"
+			android:orientation="horizontal"
+			>
+			
+			<TextView
+				android:id="@+id/txv_empty_bottom_price"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="@dimen/dp15"
+				android:layout_weight="1"
+				android:text="9.999"
+				android:textColor="@color/empty_red"
+				/>
+			
+			<ImageView
+				android:layout_width="@dimen/dp19"
+				android:layout_height="@dimen/dp19"
+				android:layout_marginTop="@dimen/dp10"
+				android:background="@mipmap/card_cb_tongyi"
+				/>
+			
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				android:orientation="vertical"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dp3"
+					android:layout_marginTop="@dimen/dp12"
+					android:text="我已认真阅读并同意"
+					android:textSize="@dimen/sp14"
+					/>
+				
+				<TextView
+					android:id="@+id/textView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dp3"
+					android:layout_marginTop="@dimen/dp10"
+					android:text="《用户购买协议》"
+					android:textColor="@color/empty_bule_xy"
+					android:textSize="@dimen/sp14"
+					/>
+			</LinearLayout>
+			
+			<android.support.v7.widget.CardView
+				android:id="@+id/card_empty_bottom_select"
+				android:layout_width="@dimen/dp39"
+				android:layout_height="@dimen/dp35"
+				android:layout_gravity="center"
+				android:layout_marginRight="@dimen/dp15"
+				android:layout_weight="1"
+				android:foreground="?attr/selectableItemBackground"
+				app:cardBackgroundColor="@color/empty_red"
+				app:cardCornerRadius="@dimen/dp5"
+				app:cardElevation="@dimen/dp2"
+				app:contentPadding="@dimen/dp5"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="点击查询"
+					android:textColor="@color/colorWhite"
+					/>
+			</android.support.v7.widget.CardView>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

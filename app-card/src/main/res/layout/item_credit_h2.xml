@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dp10"
+		android:layout_marginBottom="@dimen/dp10"
+		android:background="@color/colorWhite"
+		android:orientation="vertical"
+		>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp50"
+			android:background="@color/colorWhite"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			>
+			
+			<View
+				android:layout_width="@dimen/dp3"
+				android:layout_height="@dimen/dp15"
+				android:layout_gravity="center"
+				android:layout_marginLeft="@dimen/dp15"
+				android:background="@color/color_card_ok"
+				/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/dp15"
+				android:text="智能还款 + 空卡周转"
+				android:textColor="@color/grayColor_main"
+				android:textSize="@dimen/sp16"
+				/>
+			
+			<include layout="@layout/space" />
+			
+			<ImageView
+				android:layout_width="@dimen/dp13"
+				android:layout_height="@dimen/dp14"
+				android:src="@mipmap/card_manager"
+				/>
+			
+			<TextView
+				android:id="@+id/txv_credit_card_manager"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/dp15"
+				android:text="信用卡管理"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+		</LinearLayout>
+		
+		<ImageView
+			android:id="@+id/iv_card_default"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginBottom="@dimen/dp10"
+			android:layout_marginLeft="@dimen/dp10"
+			android:layout_marginRight="@dimen/dp10"
+			android:src="@mipmap/card_manager_no_data"
+			/>
+		
+		<app.card.view.KmRecyclerView
+			android:id="@+id/rv_add_card"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			app:layoutManager="@string/LinearLayoutManager"
+			/>
+		
+		<android.support.v7.widget.CardView
+			android:id="@+id/card_add"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp48"
+			android:layout_marginBottom="@dimen/dp15"
+			android:layout_marginLeft="@dimen/dp20"
+			android:layout_marginRight="@dimen/dp20"
+			android:foreground="?attr/selectableItemBackground"
+			app:cardBackgroundColor="@color/color_card_bg"
+			app:cardCornerRadius="@dimen/dp5"
+			app:cardElevation="@dimen/dp2"
+			>
+			
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:text="+添加信用卡"
+				android:textColor="@color/grayColor_main"
+				android:textSize="@dimen/sp16"
+				/>
+		</android.support.v7.widget.CardView>
+	</LinearLayout>
+</LinearLayout>

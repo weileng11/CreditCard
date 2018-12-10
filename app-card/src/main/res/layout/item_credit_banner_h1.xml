@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorWhite"
+	android:orientation="vertical"
+	>
+	
+	<include layout="@layout/item_banner_layout"
+		android:visibility="gone"
+		/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp45"
+		android:background="@color/colorWhite"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		>
+		
+		<View
+			android:layout_width="@dimen/dp3"
+			android:layout_height="@dimen/dp15"
+			android:layout_gravity="center"
+			android:layout_marginLeft="@dimen/dp15"
+			android:background="@color/color_card_ok"
+			/>
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dp10"
+			android:text="全部信用卡"
+			android:textColor="@color/grayColor_main"
+			android:textSize="@dimen/sp16"
+			/>
+		
+		<include layout="@layout/space" />
+		
+		<ImageView
+			android:layout_width="@dimen/dp13"
+			android:layout_height="@dimen/dp12"
+			android:src="@mipmap/card_edit"
+			/>
+		
+		<TextView
+			android:id="@+id/txv_card_edit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/dp15"
+			android:text="编辑"
+			android:textColor="@color/color_pub_tv"
+			android:textSize="@dimen/sp14"
+			/>
+	</LinearLayout>
+	
+	<app.card.view.banner.mzbanner.MZBannerView
+		android:id="@+id/banner"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp175"
+		app:canLoop="true"
+		app:indicatorAlign="center"
+		app:indicatorPaddingLeft="30dp"
+		app:indicatorPaddingRight="@dimen/dp30"
+		app:open_mz_mode="true"
+		app:middle_page_cover="false"
+		/>
+	
+	<app.card.nodata.ProjectNoDataLayout
+		android:id="@+id/ll_no_data"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp175"
+		android:visibility="gone"
+		/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp60"
+		android:layout_margin="@dimen/dp10"
+		android:orientation="horizontal"
+		>
+		
+		<LinearLayout
+			android:layout_width="@dimen/dp0"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center"
+			>
+			
+			<TextView
+				android:id="@+id/txv_last_order_repay"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="未知"
+				android:textColor="@color/grayColor_main"
+				android:textSize="@dimen/sp14"
+				/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="本期剩余应还"
+				android:layout_marginTop="@dimen/dp8"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+		</LinearLayout>
+		
+		<View
+			android:layout_width="@dimen/dp1"
+			android:layout_height="@dimen/dp40"
+			android:layout_gravity="center"
+			android:background="@color/grayColor_line"
+			/>
+		
+		<LinearLayout
+			android:layout_width="@dimen/dp0"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center"
+			>
+			
+			<TextView
+				android:id="@+id/txv_last_order_repay_y"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="未知"
+				android:textColor="@color/grayColor_main"
+				android:textSize="@dimen/sp14"
+				/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="最低应还"
+				android:layout_marginTop="@dimen/dp8"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+		</LinearLayout>
+		
+		<View
+			android:layout_width="@dimen/dp1"
+			android:layout_height="@dimen/dp40"
+			android:layout_gravity="center"
+			android:background="@color/grayColor_line"
+			/>
+		
+		<LinearLayout
+			android:layout_width="@dimen/dp0"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="center"
+			>
+			
+			<TextView
+				android:id="@+id/txv_last_model"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="智能"
+				android:textColor="@color/grayColor_main"
+				android:textSize="@dimen/sp14"
+				/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="还款模式"
+				android:layout_marginTop="@dimen/dp8"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+	
+	<android.support.v7.widget.CardView
+		android:id="@+id/card_ok_add"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp48"
+		android:layout_marginBottom="@dimen/dp10"
+		android:layout_marginLeft="@dimen/dp20"
+		android:layout_marginRight="@dimen/dp20"
+		android:foreground="?attr/selectableItemBackground"
+		app:cardBackgroundColor="@color/color_card_b7"
+		app:cardCornerRadius="@dimen/dp5"
+		app:cardElevation="@dimen/dp2"
+		>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:text="预约还款"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/sp16"
+			/>
+	</android.support.v7.widget.CardView>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp10"
+		android:layout_gravity="center"
+		android:background="@color/grayColor_line"
+		/>
+
+</LinearLayout>

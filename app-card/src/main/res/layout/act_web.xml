@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	>
+	
+	<LinearLayout
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="@dimen/actionBarSize"
+		android:background="@color/colorPrimary"
+		android:fitsSystemWindows="true"
+		android:orientation="horizontal"
+		>
+		
+		<LinearLayout
+			android:id="@+id/ll_back"
+			android:layout_width="@dimen/dp80"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			>
+			
+			<ImageView
+				android:layout_width="@dimen/dp17"
+				android:layout_height="@dimen/dp21"
+				android:layout_gravity="center|left"
+				android:layout_marginLeft="@dimen/dp10"
+				android:scaleType="fitXY"
+				android:src="@mipmap/arrow_left"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorWhite"
+				android:textSize="@dimen/sp14"
+				android:layout_gravity="center"
+				android:text="返回"
+				/>
+		</LinearLayout>
+		
+		<!--<TextView-->
+			<!--android:id="@+id/toolbar_left_text"-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:layout_gravity="center|left"-->
+			<!--android:drawableLeft="@mipmap/arrow_left"-->
+			<!--android:foreground="?attr/selectableItemBackground"-->
+			<!--android:gravity="center"-->
+			<!--android:minHeight="@dimen/dp40"-->
+			<!--android:minWidth="@dimen/dp40"-->
+			<!--android:textColor="#fff"-->
+			<!--android:textSize="@dimen/sp_14"-->
+			<!--tools:text="返回"-->
+			<!--/>-->
+		
+		<!--<TextView-->
+			<!--android:id="@+id/toolbar_right_text"-->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:layout_gravity="center|right"-->
+			<!--android:layout_marginLeft="@dimen/dp_10"-->
+			<!--android:foreground="?attr/selectableItemBackground"-->
+			<!--android:gravity="center"-->
+			<!--android:minHeight="@dimen/dp40"-->
+			<!--android:minWidth="@dimen/dp40"-->
+			<!--android:textColor="?android:textColorPrimaryInverse"-->
+			<!--android:textSize="@dimen/sp_14"/>-->
+			<!--&lt;!&ndash;tools:text="菜单"&ndash;&gt;-->
+			/>
+	</LinearLayout>
+	
+	<ProgressBar
+		android:id="@+id/web_progress"
+		style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp2"
+		/>
+	
+	<FrameLayout
+		android:id="@+id/web_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		/>
+</LinearLayout>

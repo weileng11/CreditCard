@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:orientation="vertical"
+	>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorWhite"
+		android:orientation="vertical"
+		>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp55"
+			android:background="@color/dialog_bg2"
+			android:gravity="center"
+			android:orientation="horizontal"
+			>
+			
+			<ImageView
+				android:id="@+id/iv_bank_head"
+				android:layout_width="@dimen/dp35"
+				android:layout_height="@dimen/dp35"
+				android:scaleType="fitXY"
+				/>
+			
+			<TextView
+				android:id="@+id/txv_bank_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="银行名称"
+				android:textColor="@color/dialog_ok"
+				android:textSize="@dimen/sp16"
+				/>
+		</LinearLayout>
+		
+		<TextView
+			android:id="@+id/txv_bank_content"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dp20"
+			android:text="xxxxx"
+			android:textColor="@color/grayColor_main"
+			android:textSize="@dimen/sp14"
+			/>
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/dp25"
+			android:layout_marginRight="@dimen/dp35"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			>
+			
+			<EditText
+				android:id="@+id/ed_bank_code"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dp40"
+				android:layout_marginRight="@dimen/dp100"
+				android:background="@drawable/bg_dialog_white_stocke"
+				android:ellipsize="end"
+				android:hint="请输入验证码"
+				android:maxLines="1"
+				android:paddingLeft="@dimen/dp5"
+				android:textColor="@color/grayColor_main"
+				android:textColorHint="@color/add_card_hint"
+				android:textSize="@dimen/sp14"
+				android:layout_centerVertical="true"
+				android:layout_alignParentStart="true"
+				/>
+			
+			<android.support.v7.widget.CardView
+				android:layout_width="@dimen/dp80"
+				android:layout_height="@dimen/dp35"
+				android:layout_alignParentRight="true"
+				android:layout_margin="@dimen/dp5"
+				android:foreground="?attr/selectableItemBackground"
+				app:cardBackgroundColor="@color/color_card_b1"
+				app:cardCornerRadius="@dimen/dp5"
+				app:cardElevation="@dimen/dp2"
+				>
+				
+				<TextView
+					android:id="@+id/txv_get_code"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:padding="@dimen/dp2"
+					android:text="获取验证码"
+					android:textColor="@color/colorWhite"
+					android:textSize="@dimen/sp12"
+					/>
+			</android.support.v7.widget.CardView>
+		</RelativeLayout>
+		
+		<TextView
+			android:id="@+id/txv_bank_video"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="如您无法收到验证码,请使用语言验证码"
+			android:layout_marginLeft="@dimen/dp25"
+			android:textSize="@dimen/sp14"
+			android:layout_marginTop="@dimen/dp3"
+			android:textColor="@color/grayColor_hint"
+			android:visibility="gone"
+			/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp50"
+			android:orientation="horizontal"
+			android:layout_marginTop="@dimen/dp10"
+			>
+			
+			<TextView
+				android:id="@+id/txv_bank_cancel"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@color/dialog_cancel"
+				android:gravity="center"
+				android:text="取消"
+				android:textColor="@color/colorWhite"
+				/>
+			
+			<TextView
+				android:id="@+id/txv_bank_ok"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@color/dialog_ok"
+				android:gravity="center"
+				android:text="确认"
+				android:textColor="@color/colorWhite"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

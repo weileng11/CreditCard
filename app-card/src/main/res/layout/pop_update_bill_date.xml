@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<!-- 修改账单日期-->
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp60"
+		>
+		
+		<TextView
+			android:id="@+id/txv_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/dp15"
+			android:text="取消"
+			android:textSize="@dimen/sp12"
+			/>
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:text="修改账单日期"
+			android:textSize="@dimen/sp16"
+			android:textColor="@color/grayColor_main"
+			/>
+		
+		<TextView
+			android:id="@+id/txv_ok"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/dp15"
+			android:layout_marginRight="@dimen/dp20"
+			android:text="完成"
+			android:textSize="@dimen/sp12"
+			android:textColor="@color/color_card_ok"
+			/>
+	</RelativeLayout>
+	
+	<View  style="@style/project_line"/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<app.card.view.KmRecyclerView
+			android:id="@+id/rv_update"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			/>
+		<app.card.view.KmRecyclerView
+			android:id="@+id/rv_update1"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_marginLeft="@dimen/dp10"
+			android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+	
+	
+	
+</LinearLayout>

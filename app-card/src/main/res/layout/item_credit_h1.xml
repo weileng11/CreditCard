@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:orientation="vertical"
+	>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorWhite"
+		android:orientation="vertical"
+		>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp45"
+			android:background="@color/colorWhite"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:visibility="gone"
+			>
+			
+			<View
+				android:layout_width="@dimen/dp3"
+				android:layout_height="@dimen/dp15"
+				android:layout_gravity="center"
+				android:layout_marginLeft="@dimen/dp15"
+				android:background="@color/color_card_ok"
+				/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/dp15"
+				android:text="空卡周转管理"
+				android:textColor="@color/grayColor_main"
+				android:textSize="@dimen/sp16"
+				/>
+		</LinearLayout>
+		
+		<android.support.v7.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp88"
+			android:layout_margin="@dimen/dp15"
+			android:foreground="?attr/selectableItemBackground"
+			app:cardCornerRadius="@dimen/dp5"
+			app:cardElevation="@dimen/dp1"
+			>
+			
+			<app.card.view.GifImageView
+				android:id="@+id/credit_h1_card_img"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitXY"
+				android:src="@mipmap/card_head_image"
+				/>
+		</android.support.v7.widget.CardView>
+	</LinearLayout>
+</LinearLayout>

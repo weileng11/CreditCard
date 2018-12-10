@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp280"
+		android:background="@color/colorWhite"
+		android:orientation="vertical"
+		>
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp60"
+			>
+			
+			<TextView
+				android:id="@+id/txv_cancel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="@dimen/dp15"
+				android:text="取消"
+				android:textSize="@dimen/sp12"
+				/>
+			
+			<TextView
+				android:id="@+id/txv_set_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:text="修改账单/还款日期"
+				android:textColor="@color/grayColor_main"
+				android:textSize="@dimen/sp16"
+				/>
+			
+			<TextView
+				android:id="@+id/txv_ok"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="@dimen/dp15"
+				android:layout_marginRight="@dimen/dp20"
+				android:text="完成"
+				android:textColor="@color/color_card_ok"
+				android:textSize="@dimen/sp12"
+				/>
+		</RelativeLayout>
+		
+		<View style="@style/project_line" />
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dp40"
+			android:gravity="center"
+			android:orientation="horizontal"
+			>
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/bg_color_hui_stocke"
+					android:gravity="center"
+					android:paddingBottom="@dimen/dp3"
+					android:paddingLeft="@dimen/dp10"
+					android:paddingRight="@dimen/dp10"
+					android:paddingTop="@dimen/dp3"
+					android:text="账单日"
+					/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/bg_color_hui_stocke"
+					android:gravity="center"
+					android:paddingBottom="@dimen/dp3"
+					android:paddingLeft="@dimen/dp10"
+					android:paddingRight="@dimen/dp10"
+					android:paddingTop="@dimen/dp3"
+					android:text="还款日"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			>
+			
+			<app.card.view.KmRecyclerView
+				android:id="@+id/rv_common"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				app:layoutManager="@string/LinearLayoutManager"
+				/>
+			
+			<app.card.view.KmRecyclerView
+				android:id="@+id/rv_common1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				app:layoutManager="@string/LinearLayoutManager"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

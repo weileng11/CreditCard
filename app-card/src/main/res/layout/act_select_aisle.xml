@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<include layout="@layout/toolbar"/>
+	
+	<!--<app.card.view.KmRecyclerView-->
+		<!--android:id="@+id/rv_aisle"-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--/>-->
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp103"
+		android:background="@color/colorWhite"
+		android:orientation="horizontal"
+		android:layout_marginTop="@dimen/dp10"
+		>
+		
+		<android.support.v7.widget.CardView
+			android:layout_width="@dimen/dp65"
+			android:layout_height="@dimen/dp65"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/dp10"
+			android:layout_marginLeft="@dimen/dp20"
+			android:layout_marginRight="@dimen/dp20"
+			android:layout_marginTop="@dimen/dp10"
+			android:foreground="?attr/selectableItemBackground"
+			app:cardCornerRadius="@dimen/dp5"
+			app:cardElevation="@dimen/dp2"
+			>
+			
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="1sp"
+				android:scaleType="fitXY"
+				android:src="@mipmap/card_aisle_a"
+				/>
+		</android.support.v7.widget.CardView>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:orientation="vertical"
+			>
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+				
+				<TextView
+					android:layout_width="@dimen/dp100"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:text="商旅通道代还"
+					android:textColor="@color/grayColor_main"
+					android:textSize="@dimen/sp16"
+					/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="A通道"
+					android:textColor="@color/color_card_ok"
+					android:textSize="@dimen/sp16"
+					/>
+			</LinearLayout>
+			
+			<TextView
+				android:layout_width="@dimen/dp150"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:text="支持大额代还"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+			
+			<LinearLayout
+				android:layout_width="@dimen/dp190"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:orientation="horizontal"
+				android:padding="@dimen/dp1"
+				android:background="@drawable/bg_color_white_stocke"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="不支持银行:"
+					android:textColor="@color/grayColor_main"
+					android:textSize="@dimen/sp12"
+					/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:text="交通银行，浦发银行..."
+					android:textColor="@color/color_pub_tv1"
+					android:textSize="@dimen/sp12"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<include layout="@layout/space" />
+		
+		<ImageView
+			android:layout_width="@dimen/dp17"
+			android:layout_height="@dimen/dp15"
+			android:layout_gravity="center"
+			android:layout_marginRight="@dimen/dp15"
+			android:src="@mipmap/arrow_right"
+			/>
+	</LinearLayout>
+	
+	<View style="@style/project_line" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp103"
+		android:background="@color/colorWhite"
+		android:orientation="horizontal"
+		>
+		
+		<android.support.v7.widget.CardView
+			android:layout_width="@dimen/dp65"
+			android:layout_height="@dimen/dp65"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/dp10"
+			android:layout_marginLeft="@dimen/dp20"
+			android:layout_marginRight="@dimen/dp20"
+			android:layout_marginTop="@dimen/dp10"
+			android:foreground="?attr/selectableItemBackground"
+			app:cardCornerRadius="@dimen/dp5"
+			app:cardElevation="@dimen/dp2"
+			>
+			
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="1sp"
+				android:scaleType="fitXY"
+				android:src="@mipmap/card_aisle_b"
+				/>
+		</android.support.v7.widget.CardView>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:orientation="vertical"
+			>
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:text="精养提额"
+					android:textColor="@color/grayColor_main"
+					android:textSize="@dimen/sp16"
+					/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="B通道"
+					android:layout_marginLeft="@dimen/dp10"
+					android:textColor="@color/color_card_ok"
+					android:textSize="@dimen/sp16"
+					/>
+			</LinearLayout>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:text="落地商户,设置计划,自动还款"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:text="完美账单,精美提额，远离封卡"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+			
+			<LinearLayout
+				android:layout_width="@dimen/dp190"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:orientation="horizontal"
+				android:padding="@dimen/dp1"
+				android:background="@drawable/bg_color_white_stocke"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="不支持银行:"
+					android:textColor="@color/grayColor_main"
+					android:textSize="@dimen/sp12"
+					/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:text="交通银行，浦发银行..."
+					android:textColor="@color/color_pub_tv1"
+					android:textSize="@dimen/sp12"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<include layout="@layout/space" />
+		
+		<ImageView
+			android:layout_width="@dimen/dp17"
+			android:layout_height="@dimen/dp15"
+			android:layout_gravity="center"
+			android:layout_marginRight="@dimen/dp15"
+			android:src="@mipmap/arrow_right"
+			/>
+	</LinearLayout>
+	
+	<View style="@style/project_line" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp103"
+		android:background="@color/colorWhite"
+		android:orientation="horizontal"
+		>
+		
+		<android.support.v7.widget.CardView
+			android:id="@+id/card_ok_add"
+			android:layout_width="@dimen/dp65"
+			android:layout_height="@dimen/dp65"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="@dimen/dp10"
+			android:layout_marginLeft="@dimen/dp20"
+			android:layout_marginRight="@dimen/dp20"
+			android:layout_marginTop="@dimen/dp10"
+			android:foreground="?attr/selectableItemBackground"
+			app:cardCornerRadius="@dimen/dp5"
+			app:cardElevation="@dimen/dp2"
+			>
+			
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="1sp"
+				android:scaleType="fitXY"
+				android:src="@mipmap/card_aisle_c"
+				/>
+		</android.support.v7.widget.CardView>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:orientation="vertical"
+			>
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:text="精养提额"
+					android:textColor="@color/grayColor_main"
+					android:textSize="@dimen/sp16"
+					/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="C通道"
+					android:layout_marginLeft="@dimen/dp10"
+					android:textColor="@color/color_card_ok"
+					android:textSize="@dimen/sp16"
+					/>
+			</LinearLayout>
+			
+			<TextView
+				android:layout_width="@dimen/dp150"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:text="智能匹配落地商户,设置计划"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:ellipsize="end"
+				android:maxLines="1"
+				android:text="完美账单,精美提额，远离封卡"
+				android:textColor="@color/color_pub_tv1"
+				android:textSize="@dimen/sp12"
+				/>
+			
+			<LinearLayout
+				android:layout_width="@dimen/dp190"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dp6"
+				android:orientation="horizontal"
+				android:padding="@dimen/dp1"
+				android:background="@drawable/bg_color_white_stocke"
+				>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="不支持银行:"
+					android:textColor="@color/grayColor_main"
+					android:textSize="@dimen/sp12"
+					/>
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:maxLines="1"
+					android:text="交通银行，浦发银行..."
+					android:textColor="@color/color_pub_tv1"
+					android:textSize="@dimen/sp12"
+					/>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<include layout="@layout/space" />
+		
+		<ImageView
+			android:layout_width="@dimen/dp17"
+			android:layout_height="@dimen/dp15"
+			android:layout_gravity="center"
+			android:layout_marginRight="@dimen/dp15"
+			android:src="@mipmap/arrow_right"
+			/>
+	</LinearLayout>
+	
+	<View style="@style/project_line" />
+	
+</LinearLayout>
